@@ -1,13 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Asignaturas;
 
-/**
- *
- * @author mativ
- */
+import java.util.ArrayList;
+
 public class Curso {
+    private ArrayList <Inscripcion> delAlumno;
+    
+    private void inscripto(){
+        
+    }
     
 }

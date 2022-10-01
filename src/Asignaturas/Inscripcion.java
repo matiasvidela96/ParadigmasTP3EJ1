@@ -1,13 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Asignaturas;
+import Miembros.*;
 
-/**
- *
- * @author mativ
- */
+
 public class Inscripcion {
-    
+    private Estudiante alumno;
+    private Curso paraEl;
 }
