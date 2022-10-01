@@ -4,10 +4,22 @@
  */
 package Miembros;
 
+import Asignaturas.*;
+
 /**
  *
  * @author mativ
  */
-public class Profesor {
+public class Profesor extends Persona{
+
+    private Curso curso;
+    
+    public Profesor(String nombre) {
+        super.nombre = nombre;
+    }
+    
+    public void dicta (Curso c){
+    
+    }
     
 }
