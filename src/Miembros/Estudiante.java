@@ -20,8 +20,9 @@ public class Estudiante extends Persona{
         super.nombre = nombre;
     }
     
-    public void inscribir(Curso c){
+    public void inscribir(Curso c) throws ErrorInscripcion{
     
+        if (inscripto.size() == 3) {throw new ErrorInscripcion(this);}
         Inscripcion i = new Inscripcion(this,c);
         inscripto.add(i);
     
