@@ -13,7 +13,7 @@ import java.util.ArrayList;
  */
 public class Estudiante extends Persona{
     protected Integer legajo;
-    private ArrayList <Inscripcion> inscripto;
+    private ArrayList <Inscripcion> inscripto = new ArrayList<Inscripcion>();
 
     public Estudiante(Integer legajo, String nombre) {
         this.legajo = legajo;
@@ -22,7 +22,35 @@ public class Estudiante extends Persona{
     
     public void inscribir(Curso c){
     
+        Inscripcion i = new Inscripcion(this,c);
+        inscripto.add(i);
     
     }
+
+    public Integer getLegajo() {
+        return legajo;
+    }
+
+    public void setLegajo(Integer legajo) {
+        this.legajo = legajo;
+    }
+
+    public ArrayList<Inscripcion> getInscripto() {
+        return inscripto;
+    }
+
+    public void setInscripto(ArrayList<Inscripcion> inscripto) {
+        this.inscripto = inscripto;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
+    
     
 }
