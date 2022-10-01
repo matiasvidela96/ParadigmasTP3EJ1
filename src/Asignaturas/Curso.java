@@ -17,7 +17,7 @@ public class Curso extends Hashtable <Integer, Inscripcion> {
     //muestro los inscriptos al curso
     public void inscriptos(){
         System.out.println("Curso: " + titulo);
-        System.out.println("Cantidad de inscriptos "+ delAlumno.size());
+        System.out.println("Cantidad de inscriptos: "+ delAlumno.size());
         System.out.println("----------------------------------------------");
 
         Enumeration enum1 = delAlumno.elements(); //Se usa el objeto enum1 para reccorre los elmentos de un Hashtable retornado por elements. 
