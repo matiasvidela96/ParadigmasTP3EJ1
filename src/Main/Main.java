@@ -25,6 +25,12 @@ public class Main {
         //creo cursos
         Curso c1 = new Curso ("Paradigmas");
         
+        //creo profesores
+        Profesor p1 = new Profesor("leon");
+        
+        //setear curso a profesor
+        p1.dicta(c1);
+        
         //inscribir estudiantes a cursos
         e1.inscribir(c1);
         

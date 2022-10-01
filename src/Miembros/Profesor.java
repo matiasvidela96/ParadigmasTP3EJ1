@@ -20,6 +20,22 @@ public class Profesor extends Persona{
     
     public void dicta (Curso c){
     
+        this.curso = c;
+        
     }
+
+    public Curso getCurso() {
+        return curso;
+    }
+  
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
+    
     
 }
