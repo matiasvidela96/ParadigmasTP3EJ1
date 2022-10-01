@@ -10,7 +10,9 @@ public class Inscripcion {
         this.alumno = alumno;
         this.paraEl = paraEl;
        
-        paraEl.put(alumno.getLegajo(), this);       
+//        paraEl.put(alumno.getLegajo(), this);  
+        
+        paraEl.setDelAlumno(alumno,this);
     }
 
     public Estudiante getAlumno() {
