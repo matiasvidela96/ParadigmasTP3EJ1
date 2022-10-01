@@ -20,7 +20,7 @@ public class Main {
      */
     public static void main(String[] args) {
         
-        try {
+        
             //creo estudiantes
             Estudiante e1 = new Estudiante (001,"matias");
             Estudiante e2 = new Estudiante (002,"augusto");
@@ -37,18 +37,16 @@ public class Main {
             //muestro curso que dicta profesor
             p1.getCursoDictado();
             
+            try {
             //inscribir estudiantes a cursos
-            e1.inscribir(c1);
+            e1.inscribir(c1); 
+            
+            } catch (ErrorInscripcion ex) {
+            ex.Error();
+            }
             
             //mostrar alumnos inscriptos a cursos
             c1.inscriptos();
-            
-            
-            
-            
-        } catch (ErrorInscripcion ex) {
-            ex.Error();
-        }
     }
     
 }
