@@ -12,7 +12,10 @@ import Miembros.Estudiante;
  */
 public class ErrorInscripcion extends Exception{
         
-    public ErrorInscripcion(Estudiante e) {
+    public ErrorInscripcion() {
+        
+    }
+    public void Error(){
         System.out.println("Error: no se puede inscribir en más de 3 materias");
     }
     

@@ -18,6 +18,7 @@ public class Profesor extends Persona{
         super.nombre = nombre;
     }
     
+    //seria el set curso
     public void dicta (Curso c){
     
         this.curso = c;
@@ -34,6 +35,10 @@ public class Profesor extends Persona{
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+    
+    public void getCursoDictado() {
+        System.out.println("El profesor " + this.nombre + " " + "dicta el curso " + curso.getTitulo());        
     }
     
     

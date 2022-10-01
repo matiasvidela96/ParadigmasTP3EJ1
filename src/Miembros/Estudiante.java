@@ -22,10 +22,9 @@ public class Estudiante extends Persona{
     
     public void inscribir(Curso c) throws ErrorInscripcion{
     
-        if (inscripto.size() == 3) {throw new ErrorInscripcion(this);}
+        if (inscripto.size() == 3) {throw new ErrorInscripcion();}
         Inscripcion i = new Inscripcion(this,c);
-        inscripto.add(i);
-    
+        inscripto.add(i);    
     }
 
     public Integer getLegajo() {

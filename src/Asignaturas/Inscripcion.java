@@ -8,10 +8,7 @@ public class Inscripcion {
 
     public Inscripcion(Estudiante alumno, Curso paraEl) {//al crear una inscripcion guardo en hashtable de curso al alumno
         this.alumno = alumno;
-        this.paraEl = paraEl;
-       
-//        paraEl.put(alumno.getLegajo(), this);  
-        
+        this.paraEl = paraEl;        
         paraEl.setDelAlumno(alumno,this);
     }
 

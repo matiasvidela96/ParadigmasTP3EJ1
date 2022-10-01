@@ -5,6 +5,8 @@
 package Main;
 import Asignaturas.*;
 import Miembros.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 /**
@@ -18,24 +20,35 @@ public class Main {
      */
     public static void main(String[] args) {
         
-        //creo estudiantes
-        Estudiante e1 = new Estudiante (001,"matias");
-        Estudiante e2 = new Estudiante (002,"augusto");
-        
-        //creo cursos
-        Curso c1 = new Curso ("Paradigmas");
-        
-        //creo profesores
-        Profesor p1 = new Profesor("leon");
-        
-        //setear curso a profesor
-        p1.dicta(c1);
-        
-        //inscribir estudiantes a cursos
-        e1.inscribir(c1);
-        
-        //mostrar alumnos inscriptos a cursos
-        c1.inscriptos();
+        try {
+            //creo estudiantes
+            Estudiante e1 = new Estudiante (001,"matias");
+            Estudiante e2 = new Estudiante (002,"augusto");
+            
+            //creo cursos
+            Curso c1 = new Curso ("Paradigmas");
+            
+            //creo profesores
+            Profesor p1 = new Profesor("leon");
+            
+            //setear curso a profesor
+            p1.dicta(c1);
+            
+            //muestro curso que dicta profesor
+            p1.getCursoDictado();
+            
+            //inscribir estudiantes a cursos
+            e1.inscribir(c1);
+            
+            //mostrar alumnos inscriptos a cursos
+            c1.inscriptos();
+            
+            
+            
+            
+        } catch (ErrorInscripcion ex) {
+            ex.Error();
+        }
     }
     
 }
