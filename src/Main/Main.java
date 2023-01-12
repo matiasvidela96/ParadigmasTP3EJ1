@@ -47,6 +47,11 @@ public class Main {
             
             //mostrar alumnos inscriptos a cursos
             c1.inscriptos();
+            
+           System.out.println("----------------------------------------------");
+            System.out.println( Inscripcion.estaInscripto(e1.getNombre(), c1));
+            
+            e1.cursosInscriptos();
     }
     
 }

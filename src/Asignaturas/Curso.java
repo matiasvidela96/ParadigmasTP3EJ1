@@ -51,6 +51,13 @@ public class Curso extends Hashtable <Integer, Inscripcion> {
         delAlumno.put(e.getLegajo(), i);
     }
     
+    public Integer getCantidadInscriptos() {
+        if (this.delAlumno != null) {
+            return this.delAlumno.size();
+        }
+        return 0;
+    }
+    
     
     
 }

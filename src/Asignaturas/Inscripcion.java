@@ -2,6 +2,7 @@ package Asignaturas;
 import Miembros.*;
 
 
+
 public class Inscripcion {
     private Estudiante alumno;
     private Curso paraEl;
@@ -28,7 +29,13 @@ public class Inscripcion {
         this.paraEl = paraEl;
     }
     
+    public static boolean estaInscripto (String nombreEstudiante, Curso curso){
+       
+    return curso.getDelAlumno().values().stream().anyMatch(
+            x -> nombreEstudiante.equals(x.getAlumno().getNombre()));
     
     
+    
+    }
     
 }

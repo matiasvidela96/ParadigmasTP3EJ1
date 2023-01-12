@@ -51,6 +51,18 @@ public class Estudiante extends Persona{
         this.nombre = nombre;
     }
     
+    public void cursosInscriptos(){
+    
+        if (inscripto != null) {
+            
+            for (int i = 0; i < inscripto.size(); i++) {
+                System.out.println("Esta inscripto en: " + inscripto.get(i).getParaEl().getTitulo());
+            }
+            
+        }
+    
+    }
+    
     
     
 }
